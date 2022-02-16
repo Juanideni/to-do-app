@@ -1,18 +1,38 @@
-import { FiEdit3 } from "react-icons/fi";
+
 import {Button} from "react-bootstrap"
 
-function List() {
+function List(props) {
+    console.log(props.task)
     return (
-      <div className="div-container">
-        <ul className="list-ul">
-          <div className="div-li">
-            <li>Tidy my room</li>
-            <Button variant="outline-success">Edit</Button>
-            <Button variant="outline-danger">Delete</Button>
-          </div>
-            <hr></hr>
-        </ul>
-      </div>
+      <>
+        {props.task !== "" ? (
+          <ul className="list-ul">
+            {props.task.map((tasks) => (
+                <>
+                    <li className="div-li">
+                        {tasks.item !== "" ?
+                            <>
+                            <h5>
+                            {tasks.item}
+                            </h5>
+                            <Button variant="outline-danger"> Delete</Button>
+                            <Button variant="outline-info">Edit</Button>
+                            </>
+                    :
+                    ""
+                        }
+                         
+                    </li>
+                    
+                
+                </>
+            ))}{" "}
+                </ul>
+            
+        ) : (
+          ""
+        )}
+      </>
     );
 }
 export default List;
