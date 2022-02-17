@@ -8,10 +8,8 @@ function ToDo() {
   const [updatedTask, setUpdatedTask] = useState(null);
 
   const addTask = () => {
-    if (task === "") {
-      alert("Input cant be empty")
-    }
-     else if (task !== "" && !toggleSubmit) {
+   
+     if (task !== "" && !toggleSubmit) {
       setTaskList(
         taskList.map((tasks) => {
           if (tasks.id === updatedTask) {
@@ -22,7 +20,7 @@ function ToDo() {
        );
         setUpdatedTask(null);
         setToggleSubmit(true);
-       setTask("");
+        setTask("");
        
        
     } else {
@@ -97,7 +95,11 @@ function ToDo() {
                 <li className="div-li">
                   {tasks.item !== "" ? (
                     <>
-                      <textarea className="task" disabled>{tasks.item}</textarea>
+                        <p className="task" >
+                          {tasks.item}
+                        </p>
+                      
+
                       <div className="buttons">
                         <Button
                           variant="outline-danger"
