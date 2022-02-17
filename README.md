@@ -22,7 +22,7 @@ Thats the main goal of the project
 
 ## Also...
 If you want to see the code on your computer, you can clone the repository and execute the app with `npm start` in terminal. Will be public on my github :D ("github.com/Juanideni").
-But if you want to see the project and you dont want clone the project you can visit this URL ("https://to-do-app-juanideni.vercel.app/")where is live deployed the app
+But if you want to see the project and you dont want clone the project you can visit this URL ("https://to-do-app-juanideni.vercel.app/") where is live deployed the app
 
 ##Thanks for readme! 👋  By Juan Ignacio Denipoti 
 
