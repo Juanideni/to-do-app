@@ -1,21 +1,22 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-import ToDo from "./components/ToDo";
 
+import ToDo from "./components/ToDo";
+import Foot from "./components/Foot";
 import Title from "./components/Title";
 
 function App(props) {
  
   return (
-    <>
-      <div className="app">
+   
+     <div className="app">
+   
         <Title />
         <ToDo/>
-          
-      
-      </div>
-    </>
+        <Foot/>
+     </div>
+  
   );
 
 }
